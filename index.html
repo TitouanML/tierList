@@ -9,17 +9,19 @@
 </head>
 <body>
     <header>
-        <h1>My tier list</h1>
+        <input type="text" class="searchMovie" id="search" placeholder="Movie title">
+        <div id="suggestions" class="suggestions"></div>
     </header>
 
     <main>
         <span class="headerContainer">
-            <h1>My tier list</h1>
         </span>
         <div id="board">
             <div class="row">
-                <div class="label">S</div>
-                <div class="card" id="first" draggable="true">noa jtm</div>
+                <div class="label">
+                    S
+                </div>
+                <div class="card" id="1" draggable="true">noa jtm</div>
             </div>
             <div class="row">
                 <div class="label">
@@ -51,9 +53,15 @@
                     F
                 </div>
             </div>
+            <div class="row" id="cardsSection">
+                <div class="label">
+                    Stock
+                </div>
+            </div>
         </div>
     </main>
 </body>
+<script src="/searchbar.js"></script>
 <script src ="/cards.js"></script>
 <script src ="/rows.js"></script>
 </html>
