@@ -6,6 +6,9 @@ const onDragOver = (event) => {
 
 const onDrop = (event) => {
     event.preventDefault();
+    const draggedCardId = event.dataTransfer.getData('id');
+    const draggedCard = document.getElementById(draggedCardId); 
+    event.target.appendChild(draggedCard);
     console.log("dropped the element");
 };
 rows.forEach((row) => {
