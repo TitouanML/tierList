@@ -43,4 +43,17 @@
         width: 100px;
         background-color: white;
     }
+
+    .headerContainer{
+        display: flex;
+        justify-content: center;
+        font-size: 10px;
+    }
+
+    #addCard{
+        background: none;
+        border: none;
+        font-size:40px;
+        cursor: pointer;
+    }
 }
