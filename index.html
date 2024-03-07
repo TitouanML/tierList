@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
+    <meta name="description" content="random tier list webapp">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/style.css">
@@ -8,48 +9,67 @@
 </head>
 <body>
     <header>
-        <h1>My tier list</h1>
+            <img src="/mov.png" alt="header icon" title="header icon">
+            <h1>Your favorite movie tierList</h1>
+            <img src="/mov.png" alt="header icon" title="header icon">
     </header>
 
+    
     <main>
+        <div class="header">
+            <span>
+                <input type="text" class="searchMovie" id="search" placeholder="Movie title">
+                <button class="emptyInput" id="empty" onclick="empty()">❌</button>
+            </span>
+            <div id="suggestions" class="suggestions"></div>
+        </div>
+        <span class="headerContainer">
+        </span>
         <div id="board">
-            <div class="row">
-                <div class="label">S</div>
-                <div class="card" id="first" draggable="true">hihi</div>
+            <div class="row" ondragend="onDragEnd(event)">
+                <div class="label">
+                    S
+                </div>
             </div>
-            <div class="row">
+            <div class="row" ondragend="onDragEnd(event)">
                 <div class="label">
                     A
                 </div>
             </div>
-            <div class="row">
+            <div class="row" ondragend="onDragEnd(event)">
                 <div class="label">
                     B
                 </div>
             </div>
-            <div class="row">
+            <div class="row" ondragend="onDragEnd(event)">
                 <div class="label">
                     C
                 </div>
             </div>
-            <div class="row">
+            <div class="row" ondragend="onDragEnd(event)">
                 <div class="label">
                     D
                 </div>
             </div>
-            <div class="row">
+            <div class="row" ondragend="onDragEnd(event)">
                 <div class="label">
                     E
                 </div>
             </div>
-            <div class="row">
+            <div class="row" ondragend="onDragEnd(event)">
                 <div class="label">
                     F
+                </div>
+            </div>
+            <div class="row" ondragend="onDragEnd(event)" id="cardsSection">
+                <div class="label">
+                    Stock
                 </div>
             </div>
         </div>
     </main>
 </body>
+<script src="/searchbar.js"></script>
 <script src ="/cards.js"></script>
 <script src ="/rows.js"></script>
 </html>
