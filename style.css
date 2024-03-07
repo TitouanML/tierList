@@ -6,11 +6,27 @@
         flex-direction:column ;
         justify-content: center;
         align-items: center;
-
+        background-color: aliceblue;
     }
 
     header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
         margin-bottom: 15%;
+        background-color: lightcoral;
+        padding: 10px;
+    }
+
+    header h1{
+    
+        font-size: 20px;
+    }
+
+    header img{
+
+        width: 10%;
+        height: 10%;
     }
 
     #board{
@@ -109,7 +125,7 @@
         justify-content: top;
         align-items: start;
         flex-direction: column;
-        background-color: #FFF;
+        background-color: rgba(255,255,255,0.3);
         border:solid Black 1px;
         border-radius: 5px;
         overflow: scroll;
@@ -117,6 +133,7 @@
         height: 80%px;
         z-index: 2;
         margin-left: 2vw;
+        backdrop-filter: blur(15px);
     }
 
     .suggestion{
@@ -124,7 +141,8 @@
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        background-color: gray;
+        background-color: rgba(128, 128, 128,0.3);
+        backdrop-filter: blur(15px);
         width: 400px;
         height: 150px;
         margin: auto;
